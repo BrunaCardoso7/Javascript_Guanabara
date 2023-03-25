@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primeiros passos com DOM</title>
+    <style>
+        
+        body{
+            margin: auto;
+            color: aliceblue;
+            background-color: blueviolet;
+        }
+        #container{
+            margin-top: 30%;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.463);
+            border-radius: 10px;
+            width: 60%;
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        div{
+            text-align: center;
+            background-color: blue;
+            width: 30vw;
+            margin: auto;
+            border-radius: 10px;
+        }
+        div#botao:hover{
+            background-color: rgb(1, 211, 211);
+            text-decoration: underline;
+        }
+        div >p{
+            text-align: center;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <h1>Iniciando estudo de Dom</h1>
+        <p>Aqui vai o <strong>resultado</strong></p>
+        <div id="botao">
+            <p>clique em mim</p>
+        </div>
+    </div>
+    <script>
+        var botao = window.document.querySelector('div#botao')
+        botao.style.color = 'yellow'
+    </script>
+</body>
+</html>
