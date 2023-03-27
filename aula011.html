@@ -7,6 +7,29 @@
     <title>condições aninhadas</title>
 </head>
 <body>
-    
+    <h1>verificação de votos</h1>
+
+    <label for="idade">idade</label>
+    <input type="number" name="idade" id="idade">
+
+    <input type="button" value="verificar" onclick="verificar()">
+
+    <div id="verificar">
+
+    </div>
+
+    <script>
+        function verificar(){
+            var idd = parseInt(document.querySelector('#idade').value)
+            if (idd < 16) {
+            document.querySelector('#verificar').innerHTML = `você tem apenas ${idd}, <strong>voto negado</strong>`    
+            }else if (idd < 18){
+                document.querySelector('#verificar').innerHTML = '<strong>voto optativo</strong>'
+            }else if (idd > 18){
+                document.querySelector('#verificar').innerHTML = `<strong>voto obrigatório</strong>`
+            }
+        }
+
+    </script>
 </body>
 </html>
