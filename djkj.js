@@ -1,6 +1,5 @@
 pizza = 1
-do {
+while(pizza < 6){
     console.log('tem pizza')
     pizza++
-}while(pizza < 6)
-
+}
