@@ -1,0 +1,32 @@
+body{
+    color: aliceblue;
+    background-color: blue;
+    font-family: monospace;
+    font-weight: bolder;
+}
+header{
+    
+}
+header > h1{
+    text-align: center;
+}
+section{
+    margin: auto;
+    color: darkgray;
+    background-color: aliceblue;   
+    width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+section>#imagem>img{
+    width: 300px;
+}
+footer{
+    
+}
+footer > p{
+    color: white;
+    text-align: center;
+}
+  
