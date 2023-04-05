@@ -1,6 +1,6 @@
 body{
     color: aliceblue;
-    background-color: blue;
+    background-color: rgb(147, 147, 186);
     font-family: monospace;
     font-weight: bolder;
 }
@@ -13,22 +13,19 @@ header > h1{
 section{
     margin: auto;
     color: darkgray;
-    background-color: aliceblue;   
+    background-color: rgb(255, 255, 255);   
     width: 300px;
     border-radius: 10px;
     padding: 20px;
 }
 Section>#text{
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: underline;
     padding-bottom: 10px;
 }
 section>#imagem>img{
     width: 300px;
-}
-footer{
-    
 }
 footer > p{
     color: white;
